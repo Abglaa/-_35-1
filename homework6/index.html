@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop id="video-background">
+            <source src="image/video.mp4" type="video/mp4">
+        </video>
+        <div class="wrapper">
+            <div class="todo-container">
+                <input type="text" id="taskInput" placeholder="Введите задачу">
+                <button id="addTaskBtn">Добавить задачу</button>
+                <div id="taskList"></div>
+            </div>
+            
+            <div id="deleteModal" class="modal">
+                <div class="modal-content">
+                    <p>Подтвердите удаление</p>
+                    <button class="confirm-delete-btn">Ок</button>
+                    <button class="cancel-btn">Отмена</button>
+                </div>
+            </div>
+            
+            <div id="editModal" class="modal">
+                <div class="modal-content">
+                    <input type="text" id="editInput">
+                    <button class="confirm-edit-btn">Ок</button>
+                    <button class="cancel-btn">Отмена</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
