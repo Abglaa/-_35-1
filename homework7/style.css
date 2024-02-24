@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive, sans-serif;
+}
+body {
+    background: beige;
+
+}
+.block {
+    width: 600px;
+    margin: 0 auto;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29px;
+    justify-content: space-around;
+}
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 36px;
+    margin-top: 18px;
+}
+.riddle {
+    width: 255px;
+    height: 100px;
+    background: aquamarine;
+    margin-bottom: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 24px;
+    padding: 3px;
+}
+.answer2 {
+    display: flex;
+}
+.toggleButton {
+    width: 115px;
+    height: 25px;
+    border-radius: 23px;
+    background: aqua;
+}
+.answer {
+    display: none;
+}
